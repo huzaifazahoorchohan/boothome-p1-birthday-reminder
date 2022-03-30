@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pinkish-color: #f28482;
+  --light-pinkish-color: #f5cac3;
+  --extra-light-pinkish-color: #f7ede2;
+  --greenish-color: #84a59d;
+  --yellowish-color: #f6bd60;
+  --whitish-color: #ffffff;
+  --blackish-color: #001219;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: var(--pinkish-color);
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90vh;
+  background-color: var(--whitish-color);
+  border-radius: 0.25rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  max-width: 450px;
+  padding: 1.5rem 2rem;
+}
+
+.container h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+  margin-bottom: 2rem;
+  color: var(--blackish-color);
+}
+
+.person {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 0.75rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.person img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.person h4 {
+  margin-bottom: 0.35rem;
+  color: var(--blackish-color);
+}
+
+.person p {
+  margin-bottom: 0;
+  color: var(--greenish-color);
+}
+
+.container button {
+  color: var(--whitish-color);
+  display: block;
+  width: 100%;
+  border-color: transparent;
+  background: var(--pinkish-color);
+  margin: 2rem auto 0 auto;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
+  letter-spacing: 0.15rem;
+  border-radius: 0.25rem;
+  outline: 1px solid rgba(242, 138, 178, 0.8);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    max-width: 400px;
+  }
+  .container h3 {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 456px) {
+  .container {
+    max-width: 370px;
+  }
+  .container h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .container {
+    max-width: 350px;
+  }
+  .container h3 {
+    font-size: 1.1rem;
+  }
+}
